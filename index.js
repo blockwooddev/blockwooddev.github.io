@@ -10,7 +10,14 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html'
+            views: {
+              '': {
+                templateUrl: 'home.html'
+              },
+              'about@home': {
+                templateUrl: 'about.html'
+              }
+            }
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
@@ -30,13 +37,13 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
           }      
         })
         
-        .state('home.list', {
+        /*.state('home', {
           url: '/list',
-          templateUrl: 'home-list.html',
+          templateUrl: 'about.html',
           controller: function($scope) {
               $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
           }
-        })
+        })*/
   
         // nested list with just some random string data
         .state('home.paragraph', {
