@@ -12,7 +12,11 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/home',
             views: {
               '': {
-                templateUrl: 'home.html'
+                templateUrl: 'home.html',
+                controller: function ($scope) {
+                  not_home = false;
+                  $scope.not_home = not_home;
+                }
               },
               'about@home': {
                 templateUrl: 'about.html'
@@ -21,22 +25,11 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-          url: '/about',
-          views: {
-            '': {
-              templateUrl: 'about.html'
-            },
-            'columnOne@about': {
-              template: 'look I am a column'
-            },
-            'columnTwo@about': {
-              templateUrl: 'table-data.html',
-              controller: 'portfolioController'
-            }
-          }      
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'contact.html'
         })
-        
+
         /*.state('home', {
           url: '/list',
           templateUrl: 'about.html',
@@ -72,6 +65,8 @@ portfolioApp.controller('portfolioController', function portfolioController($sco
       price: 2000
     },
   ];
+  
+  $scope.not_home = true;
 });
 
 
