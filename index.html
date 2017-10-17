@@ -19,6 +19,10 @@
     <!--  Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Manuale' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet'>
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
@@ -32,9 +36,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--  script src="./bower_components/angular/angular.js"></script -->
-    <script src="https://code.angularjs.org/1.2.13/angular.js"></script>
-    <!-- script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <!--  script src="https://code.angularjs.org/1.2.13/angular.js"></script -->
+    <!--  script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script -->
     <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="index.js"></script>
   </head>
@@ -43,12 +47,10 @@
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a ui-sref="home">Barry Lockwood</a></li>
-            <li><a ui-sref="about">About Me</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Music</a></li>
-            <li><a>Creative Coding</a></li>
+          <a class="logo-upperright" ui-sref="home">Barry Lockwood</a>
+           
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
