@@ -1,6 +1,11 @@
 
 var portfolioApp = angular.module('portfolioApp', ['ui.router']);
 
+portfolioApp.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix(''); // by default '!'
+  $locationProvider.html5Mode(true);
+}]);
+
 portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');
@@ -9,7 +14,7 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
-            url: '/home',
+            url: '/',
             views: {
               '': {
                 templateUrl: 'home.html',
