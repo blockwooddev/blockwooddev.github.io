@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "Bookman Regular";
-    src: url(./Bookman Regular.ttf) format("truetype");
+    font-family: "Bookman Old Style Bold";
+    src: url(./BOOKOSB.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "ITC Souvenir";
+  src: url(./Souvenir-Bold.otf) format("opentype");
 }
 
 .faded {
@@ -17,7 +22,7 @@
 
 body {
   padding-top: 50px;
-  background: #ffe4c4;
+  background: #19a2ff;
   width: 100%;
   height: 100%;
 }
@@ -29,17 +34,17 @@ body {
 }
 
 .logo-upperright {
-  font-family: 'Bookman Regular' !important;
+  font-family: "ITC Souvenir" !important;
   font-weight: bold;
   font-size: 27px !important;
-  color: #ffffff;
+  color: #f2ede4;
 }
 
 .logo-upperright:focus,
 .logo-upperright:hover,
 .logo-upperright:active {
   text-decoration: none !important;
-  color: #ffffff !important;
+  color: #f2ede4 !important;
 }
 
 .navbar-brand {
@@ -47,7 +52,7 @@ body {
 }
 
 .navbar {
-	background: #0066cc;
+	background: #19a2ff;
 	min-height: 30px;
 	padding: 5px 10px 5px 10px;
 }
@@ -55,28 +60,41 @@ body {
 .container {
   width: 100%;
   text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
 }
- 
+
+.resume {
+  text-align: left;
+  background: #f2efed;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+
 .jumbotron {
-  background: #ffe4c4;
+  background: #19a2ff;
   padding-top: 11%;
   width: 78%;
   display: inline-block;
 }
 
 .jumbotron h1{
-  font-family: 'Bookman Regular';
+  font-family: "ITC Souvenir";
   font-weight: bold;
   font-size: 85px;
-}
-
-.jumbotron p {
-  font-family: 'Didact Gothic'
+  color: #092d44;
 }
 
 .contact {
-  font-family: 'Didact Gothic';
+  font-family: 'Questrial';
   font-size: 20px !important;
+  color: #f2ede4;
+}
+
+.contact a {
+  color: #f2ede4;
 }
 
 .contact p {
@@ -85,7 +103,16 @@ body {
 
 .about p {
   font-family: 'Questrial';
-  font-size: 20px !important;
+  font-size: 22px !important;
+  color: #f2ede4;
+}
+
+.navbar {
+  background: #19a2ff;
+}
+
+.navbar-default {
+  border-bottom: 5px solid #00548d;
 }
 
 .navbar-default .navbar-nav>li> a {
@@ -95,9 +122,9 @@ body {
   height: 30px;
   font-family: "Didact Gothic", Helvetica, sans-serif;
   font-size: 25px;
-	color: #ffffff;
-	background: #0066cc;
+	color: #f2ede4;
 	line-height: 25px;
+
 }
 
 .navbar-default .navbar-nav>.active> a,
@@ -105,12 +132,15 @@ body {
 .navbar-default .navbar-nav>.active> a:hover,
 .navbar-default .navbar-nav>li> a:hover,
 .navbar-default .navbar-nav>li> a:focus, {
-  //padding-top:0px !important; padding-bottom:0px !important;
   text-decoration: underline;
-  //border-bottom: 1px solid #fff;
-	color: #ffffff;
-	background: #0066cc;
+  color: #f2ede4;
+	background: #19a2ff;
   //line-height: 25px;
 }
 
+.resume p.western {
+  font-family: 'Didact Gothic';
+  font-size: 18px;
+
+}
 

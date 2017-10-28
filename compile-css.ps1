@@ -1,0 +1,1 @@
+lessc starter-template.less > starter-template.css
