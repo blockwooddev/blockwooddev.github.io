@@ -34,6 +34,11 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
           url: '/contact',
           templateUrl: 'contact.html'
         })
+        
+        .state('resume', {
+          url: '/resume',
+          templateUrl: 'resume.html'
+        })
 
         /*.state('home', {
           url: '/list',
